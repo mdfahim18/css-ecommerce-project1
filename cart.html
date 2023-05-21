@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Fahim Express</title>
+</head>
+<body>
+       <!-- navbar starts here -->
+       <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+       <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around">
+        <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__list"><a href="register.html" class="nav__link">Regester</a></li>
+        <li class="nav__list"><a href="login.html" class="nav__link">Login</a></li>
+        <li class="nav__list"><a href="index.html" class="nav__link">Logout</a></li>
+        <li class="nav__list"><a href="contact.html" class="nav__link">Contact</a></li>
+        <li class="nav__list"><a href="profile.html" class="nav__link">
+            <img class="profile-icon" src="/images/profile1.jpg" alt="">
+        </a></li>
+        
+    </ul>
+
+    <ul class="nav-lower flex-space-around">
+        <li class="nav__list"><a href="index.html" class="nav__brand nav__link">Fahim Express</a></li>
+        <li class="nav__list"><a href="cart.html" class="nav__link">
+            <span> <i class="fa-solid fa-cart-shopping"></i></span>
+            Cart 2 products - $124.40
+        </a></li>
+    </ul>
+   </nav>
+   <!-- navbar ends here -->
+    <main class="cart flex-center">
+        <div class="cart-items">
+            <div class="cart__items-heading card">
+                <h2>Shopping Cart [2 items]</h2>
+                <div class="cart__items-actions">
+                    <label for="sslect">
+                        <input type="checkbox" id="select" name="select">
+                        Select all items
+                    </label>
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                    <button class="btn">Shope More</button>
+                </div>
+            </div>
+
+            <div class="cart__item card flex-space-around">
+                <input type="checkbox" name="" id="">
+                <img class="cart__item-img" src="images/product.jpg" alt="product 1">
+                <div class="cart__item-description">
+                    <h3 class="proudce__name">Sony V-4 Headphone</h3>
+                    <h4 class="cart__price">$150.99</h4>
+                    <h4 class="cart__shipping">Free Shiooing</h4>
+                </div>
+                <div class="cart__item-actions">
+                    <div>
+                        <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+
+                    <div>
+                        <button class="btn"><i class="fas fa-add"></i></button>
+                        <span>3</span>
+                        <button class="btn"><i class="fas fa-minus"></i></button>
+        
+                       </div>
+                </div>
+               
+            </div>
+            <div class="cart__item card flex-space-around">
+                <input type="checkbox" name="" id="">
+                <img class="cart__item-img" src="images/product2.jpg" alt="product 1">
+                <div class="cart__item-description">
+                    <h3 class="proudce__name">Apple smart watch</h3>
+                    <h4 class="cart__price">$150.99</h4>
+                    <h4 class="cart__shipping">Shipping cost $2.50</h4>
+                </div>
+                <div class="cart__item-actions">
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                </div>
+               <div>
+                <button class="btn"><i class="fas fa-add"></i></button>
+                <span>3</span>
+                <button class="btn"><i class="fas fa-minus"></i></button>
+
+               </div>
+            </div>
+        </div>
+
+        <div class="cart-payment">
+            <div class="cart__payment-summary card">
+                <h2>Payment Summary</h2>
+                <div>
+                    <p>Subtotal:</p>
+                    <p>$341.44</p>
+                </div>
+                <div>
+                    <p>Shipping:</p>
+                    <p>$2.50</p>
+                </div>
+                <div>
+                    <p>Total Cost:</p>
+                    <p>$344.38</p>
+                </div>
+                <button class="btn cart__payment-btn">Pay Now</button>
+            </div>
+
+            <div class="cart__payment-methods card">
+                <h2>Payment Methods</h2>
+                <div>
+                    <i class="fa-brands fa-cc-visa fa-3x"></i>
+                    <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                    <i class="fa-brands fa-cc-amex fa-3x"></i>
+                    <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                    <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer starts here -->
+   <footer class="footer flex-space-around">
+    <div class="flex-space-around">
+        <label for="subscribe">Subscribe to News letter:</label>
+        <input type="email" id="subscribe" class="footer__input" placeholder="Your Email Adress">
+        <button class="btn btn-subscribe">subscribe</button>
+    </div>
+
+    <div class="flex-space-around">
+        <p>&copy; Copyright 2023 Fahim Express All rights rserved</p>
+    </div>
+   </footer>
+   <!-- footer ends here -->
+
+   <script src="./scripts/index.js"></script>
+</body>
+</html>

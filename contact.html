@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Fahim Express</title>
+</head>
+<body>
+       <!-- navbar starts here -->
+       <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+   <nav id="menu" class="hidden">
+    <ul class="nav-upper flex-space-around">
+        <li class="nav__list"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__list"><a href="register.html" class="nav__link">Regester</a></li>
+        <li class="nav__list"><a href="login.html" class="nav__link">Login</a></li>
+        <li class="nav__list"><a href="index.html" class="nav__link">Logout</a></li>
+        <li class="nav__list"><a href="contact.html" class="nav__link">Contact</a></li>
+        <li class="nav__list"><a href="profile.html" class="nav__link">
+            <img class="profile-icon" src="/images/profile1.jpg" alt="">
+        </a></li>
+        
+    </ul>
+
+    <ul class="nav-lower flex-space-around">
+        <li class="nav__list"><a href="index.html" class="nav__brand nav__link">Fahim Express</a></li>
+        <li class="nav__list"><a href="cart.html" class="nav__link">
+            <span> <i class="fa-solid fa-cart-shopping"></i></span>
+            Cart 2 products - $124.40
+        </a></li>
+    </ul>
+   </nav>
+   <!-- navbar ends here -->
+    <main>
+        <section class="contact-section">
+            <h2 class="section-title text-center">
+                User Contact
+            </h2>
+
+         <div class="contact-container flex-center">
+            <form action="" class="form card">
+                <div class="form-control flex-center">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required autocomplete="name">
+                </div>
+                <div class="form-control flex-center">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required autocomplete="email">
+                </div>
+                <div class="form-control flex-center">
+                    <label for="message">Mesage</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div class="form-control flex-center form-btn-field">
+                    <button type="submit" class="btn contact-button">submit</button>
+                </div>
+                </form>
+
+                <div class="contact-address flex-space-around">
+                    <address>
+                        <h4>Address:</h4>
+                        <p>Surmagate, Shap poran</p>
+                        <p>Sylhet, Bangladesh</p>
+                        <br>
+                        <a href="tel+8801773531927">+8801773531927</a>
+                    </address>
+                    <br>
+                    <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57903.
+                    16678216376!2d91.81978206920424!3d24.8997578930465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                    1!3m3!1m2!1s0x375054d3d270329f%3A0xf58ef93431f67382!2sSylhet!5e0!3m2!1sen!2sbd!4v1683104671196!5m2!1sen!2sbd"
+                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+         </div>
+        </section>        
+    </main>
+
+    <!-- footer starts here -->
+   <footer class="footer flex-space-around">
+    <div class="flex-space-around">
+        <label for="subscribe">Subscribe to News letter:</label>
+        <input type="email" id="subscribe" class="footer__input" placeholder="Your Email Adress">
+        <button class="btn btn-subscribe">subscribe</button>
+    </div>
+
+    <div class="flex-space-around">
+        <p>&copy; Copyright 2023 Fahim Express All rights rserved</p>
+    </div>
+   </footer>
+   <!-- footer ends here -->
+   <script src="./scripts/index.js"></script>
+
+</body>
+</html>
